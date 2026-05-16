@@ -1,1 +1,10 @@
-{}
+{
+	"apply": "Apply",
+	"applyNewFilter": "Apply new filter",
+	"applyNewFilterConfirmation": "Do you want to apply new filter?",
+	"changeFilter": "Change Filter",
+	"clearAllParameters": "Clear all parameters",
+	"filter": "Filter",
+	"title": "WinWinTravel frontend test task",
+	"useOldFilter": "Use old filter"
+}
