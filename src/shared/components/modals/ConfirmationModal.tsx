@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { createPortal } from 'react-dom'
 import { useTranslation } from 'react-i18next'
 
-import Button from './Button'
+import Button from '../ui/Button'
 
 interface ConfirmationModalProps {
 	isOpen: boolean

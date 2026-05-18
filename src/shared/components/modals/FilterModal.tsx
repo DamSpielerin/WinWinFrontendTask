@@ -7,9 +7,9 @@ import { FilterChoose } from 'src/shared/api/types/Filter'
 import { useFilterStore } from 'src/shared/store/filterStore'
 import filterData from 'src/shared/temp/filterData.json'
 
-import Button from './Button'
+import Button from '../ui/Button'
+import FilterSection from '../ui/FilterSection'
 import ConfirmationModal from './ConfirmationModal'
-import FilterSection from './FilterSection'
 
 interface FilterModalProps {
 	isOpen: boolean

@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import Button from '../../../shared/ui/Button'
-import FilterModal from '../../../shared/ui/FilterModal'
-import SelectedFilters from '../../../shared/ui/SelectedFilters'
+import LanguageSwitcher from '../../../shared/components/langs/LanguageSwitcher'
+import FilterModal from '../../../shared/components/modals/FilterModal'
+import Button from '../../../shared/components/ui/Button'
+import SelectedFiltersSection from '../../../shared/components/ui/SelectedFiltersSection'
 
 const App = () => {
 	const { t } = useTranslation('filter')
 	const [isFilterModalOpen, setIsFilterModalOpen] = useState(false)
 
 	return (
-		<section className="flex h-dvh w-full flex-col items-center justify-center px-4 bg-gradient-to-br bg-amber-50">
+		<section className="relative flex h-dvh w-full flex-col items-center justify-center px-4 bg-gradient-to-br bg-amber-50">
+			<LanguageSwitcher />
 			<h1 className="text-6xl text-center font-semibold text-gray-600 mb-12">
 				{t('title')}
 			</h1>
@@ -24,7 +26,7 @@ const App = () => {
 				isOpen={isFilterModalOpen}
 				onClose={() => setIsFilterModalOpen(false)}
 			/>
-			<SelectedFilters />
+			<SelectedFiltersSection />
 		</section>
 	)
 }
