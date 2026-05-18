@@ -84,8 +84,6 @@ src/
 - Applied filters are stored in Zustand at `src/shared/store/filterStore.ts`.
 - Translations are stored in `src/shared/i18n/locales`.
 
-
 ## Feedback
-I would be really appreciate for any feedback
 
-    
+I would be really appreciate for any feedback
